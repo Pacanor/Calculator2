@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Operations2
+﻿namespace Operations2
 {
     public class Addition
     {

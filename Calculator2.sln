@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Operations2", "Operations2\Operations2.csproj", "{08B36CBF-B335-4BF4-B8C5-77D65D50F6F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operations2Tests", "Operations2Tests\Operations2Tests.csproj", "{66E25605-CAEE-404A-9F0C-87480BCCFD2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Operations2Tests", "Operations2Tests\Operations2Tests.csproj", "{66E25605-CAEE-404A-9F0C-87480BCCFD2B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C018A6FD-ECAA-46E7-9EDC-FDE26B270B73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,8 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Operations2;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Operations2.Tests
 {
@@ -34,7 +30,7 @@ namespace Operations2.Tests
 
             foreach (double w in y)
             {
-                Assert.AreEqual(Square.Squared(f[i]), w);
+                Assert.AreEqual(Square.Squared(e[i]), w);
                 i++;
             }
         }
@@ -50,14 +46,13 @@ namespace Operations2.Tests
                 Assert.AreEqual(Square.Squared(f[i]), z);
                 i++;
             }
-            
         }
     }
 }
 
 namespace Operations2Tests
 {
-    class SquareTests
+    internal class SquareTests
     {
     }
 }

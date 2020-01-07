@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Operations2
+﻿namespace Operations2
 {
     public class Multiplication
     {
@@ -17,7 +15,7 @@ namespace Operations2
         public static double Times(double[] a)
         {
             double c = a[0];
-            for(int i = 1; i<a.Length; i++)
+            for (int i = 1; i < a.Length; i++)
             {
                 c = Times(c, a[i]);
             }

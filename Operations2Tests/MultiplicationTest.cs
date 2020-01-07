@@ -1,8 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Operations2;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Operations2.Tests
 {
@@ -44,7 +40,7 @@ namespace Operations2.Tests
 
 namespace Operations2Tests
 {
-    class MultiplicationTests
+    internal class MultiplicationTests
     {
     }
 }

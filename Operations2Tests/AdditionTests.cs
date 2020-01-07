@@ -1,37 +1,35 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Operations2;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Operations2.Tests
 {
     [TestClass()]
     public class AdditionTests
     {
-        private readonly int a = 6;
-        private readonly int b = 3;
-        private readonly double c = 6.7;
-        private readonly double d = 3.2;
+        private readonly Random rnd = new Random();
         private readonly double[] e = { 2, 1.1, 5.3, 0.7 };
         private readonly int[] f = { 2, 1, 5, 1, 10 };
-
+        
         [TestMethod()]
         public void SumTest()
         {
-            Assert.AreEqual(9, Addition.Sum(a, b));
+            int a = rnd.Next();
+            int b = rnd.Next();
+            Assert.AreEqual(a+b, Addition.Sum(a, b));
         }
 
         [TestMethod()]
         public void SumDoubleTest()
         {
-            Assert.AreEqual(9.9, Addition.Sum(c, d));
+            double a = rnd.NextDouble();
+            double b = rnd.NextDouble();
+            Assert.AreEqual(a+b, Addition.Sum(a, b));
         }
 
         [TestMethod()]
         public void SumDoubleArrayTest()
         {
-            Assert.AreEqual(9.1, Addition.Sum(e));
+            Assert.AreEqual(e[0]+e[1]+e[2]+e[3], Addition.Sum(e));
         }
 
         [TestMethod()]
@@ -44,7 +42,7 @@ namespace Operations2.Tests
 
 namespace Operations2Tests
 {
-    class AdditionTests
+    internal class AdditionTests
     {
     }
 }

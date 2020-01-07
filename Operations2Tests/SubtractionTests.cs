@@ -1,8 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Operations2;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Operations2.Tests
 {
@@ -14,37 +10,37 @@ namespace Operations2.Tests
         private readonly double c = 6.7;
         private readonly double d = 3.2;
         private readonly double[] e = { 10.5, 2.05, 1.1, 5.3, 1.7 };
-        private readonly int[] f = {20, 2, 1, 5, 1, 10 };
+        private readonly int[] f = { 20, 2, 1, 5, 1, 10 };
 
         [TestMethod()]
-        public void DifTest()
+        public void DifferenceTest()
         {
-            Assert.AreEqual(3, Subtraction.Dif(a, b));
+            Assert.AreEqual(3, Subtraction.Difference(a, b));
         }
 
         [TestMethod()]
-        public void DifDoubleTest()
+        public void DifferenceDoubleTest()
         {
-            Assert.AreEqual(3.5, Subtraction.Dif(c, d));
+            Assert.AreEqual(3.5, Subtraction.Difference(c, d));
         }
 
         [TestMethod()]
-        public void DifDoubleArrayTest()
+        public void DifferenceDoubleArrayTest()
         {
-            Assert.AreEqual(-20.65, Subtraction.Dif(e));
+            Assert.AreEqual(-20.65, Subtraction.Difference(e));
         }
 
         [TestMethod()]
-        public void DifIntArrayTest()
+        public void DifferenceIntArrayTest()
         {
-            Assert.AreEqual(-39, Subtraction.Dif(f));
+            Assert.AreEqual(-39, Subtraction.Difference(f));
         }
     }
 }
 
 namespace Operations2Tests
 {
-    class SubtractionTests
+    internal class SubtractionTests
     {
     }
 }

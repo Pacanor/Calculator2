@@ -17,7 +17,7 @@ namespace Operations2
         public static double[] Root(double[] a)
         {
             double[] c = new double[a.Length];
-            for(int i = 0; i<a.Length; i++)
+            for (int i = 0; i < a.Length; i++)
             {
                 c[i] = Root(a[i]);
             }

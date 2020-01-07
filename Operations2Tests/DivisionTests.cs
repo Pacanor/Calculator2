@@ -1,8 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Operations2;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Operations2.Tests
 {
@@ -11,40 +8,47 @@ namespace Operations2.Tests
     {
         private readonly int a = 6;
         private readonly int b = 3;
+        private readonly int z = 0;
         private readonly double c = 10.5;
         private readonly double d = 3.5;
         private readonly double[] e = { 45.05, 1.7, 5.3, 2.5 };
-        private readonly int[] f = { 1000, 10, 5, 2};
+        private readonly int[] f = { 1000, 10, 5, 2 };
 
         [TestMethod()]
-        public void OverTest()
+        public void QuotientTest()
         {
-            Assert.AreEqual(2, Division.Over(a, b));
+            Assert.AreEqual(2, Division.Quotient(a, b));
         }
 
         [TestMethod()]
-        public void OverDoubleTest()
+        public void QuotientDoubleTest()
         {
-            Assert.AreEqual(3, Division.Over(c, d));
+            Assert.AreEqual(3, Division.Quotient(c, d));
         }
 
         [TestMethod()]
-        public void OverDoubleArrayTest()
+        public void QuotientDoubleArrayTest()
         {
-            Assert.AreEqual(2, Division.Over(e));
+            Assert.AreEqual(2, Division.Quotient(e));
         }
 
         [TestMethod()]
-        public void OverIntArrayTest()
+        public void QuotientIntArrayTest()
         {
-            Assert.AreEqual(10, Division.Over(f));
+            Assert.AreEqual(10, Division.Quotient(f));
+        }
+
+        [TestMethod()]
+        public void QuotientIntDivideZeroTest()
+        {
+            Assert.ThrowsException<DivideByZeroException>(() => Division.Quotient(a, z));
         }
     }
 }
 
 namespace Operations2Tests
 {
-    class DivisionTests
+    internal class DivisionTests
     {
     }
 }
